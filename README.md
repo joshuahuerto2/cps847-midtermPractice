@@ -5,30 +5,39 @@
 
 ## Step 2
     Create a new Slack App and give it the following bot scopes:
-    ![Screenshot](https://github.com/joshuahuerto2/cps847-midtermPractice/blob/master/BotTokens.png)
+    ```
+    app_mentions:read
+    chat:write
+    im:write
+    incoming-webhook
+    ```
     Install into workspace after completion
 
 ## Step 3
+    Enable Incoming Webhooks by clicking on Incoming Webhooks in the app settings.
+    Choose a channel in your workspace where the Webhook can reside.
+    Paste the sample curl request into a terminal to test if it works.
+## Step 4
     Create a new folder and start python virtual environment:
     ```bash
     python -m venv .venv
     source .venv/scripts/activate (Windows)
     ```
 
-## Step 4
+## Step 5
     Export tokens into virtual environment:
     ```bash
     export SLACK_BOT_TOKEN=xoxb-token
     export SLACK_SIGNING_SECRET=secretToken
     ```
 
-## Step 5
+## Step 6
     Ensure that ngrok is installed on machine and run the following command:
     ```bash
     ngrok http 3000
     ```
 
-## Step 6
+## Step 7
     Install slack_bolt python package:
     ```bash
     pip install slack_bolt
@@ -56,15 +65,16 @@
         app.start(port=int(os.environ.get("PORT", 3000)))
     ```
 
-## Step 7
-    Enable event subscriptions in Slack app settings, making sure that the URL includes /slack/events:
-    ![Screenshot](https://github.com/joshuahuerto2/cps847-midtermPractice/blob/master/EventTokens.png)
-
 ## Step 8
+    Enable event subscriptions in Slack app settings, making sure that the ngrok URL includes /slack/events.
+    Click on Subscribe to bot events and add the ``app_mention`` event, making sure to save changes before leaving.
+    
+
+## Step 9
     Run the program:
     ```bash 
     python app.py
     ```
 
-## Step 9 
+## Step 10 
     Profit.
