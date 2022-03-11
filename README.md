@@ -5,32 +5,6 @@ Create a new workspace on Slack
 
 ## Step 2
 Create a new Slack App and give it the following bot scopes:
-    ```
-    app_mentions:read
-    chat:write
-    im:write
-    incoming-webhook
-    ```
-Install into workspace after completion
-
-## Step 3
-Enable Incoming Webhooks by clicking on Incoming Webhooks in the app settings.
-Choose a channel in your workspace where the Webhook can reside.
-Paste the sample curl request into a terminal to test if it works.
-## Step 4
-Create a new folder and start python virtual environment:
-    ```bash
-    python -m venv .venv
-    source .venv/scripts/activate (Windows)
-    ```
-
-# Steps for Echo Bot
-
-## Step 1
-Create a new workspace on Slack
-
-## Step 2
-Create a new Slack App and give it the following bot scopes:
 ```
 app_mentions:read
 chat:write
