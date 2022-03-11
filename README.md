@@ -15,7 +15,7 @@ Install into workspace after completion.
 
 ## Step 3
 Enable Incoming Webhooks by clicking on Incoming Webhooks in the app settings.
-Choose a channel in your workspace where the Webhook can reside.
+Choose a channel in your workspace where the Webhook can reside by clicking on **Add New Webhook to Workspace**.
 Paste the sample curl request into a terminal to test if it works.
 
 ## Step 4
@@ -63,7 +63,7 @@ if __name__ == "__main__":
 ```
 
 ## Step 8
-Enable event subscriptions in Slack app settings, making sure that the ngrok URL includes /slack/events.
+Enable event subscriptions in Slack app settings, making sure that the ngrok URL includes */slack/events*.
 Click on Subscribe to bot events and add the ``app_mention`` event, making sure to save changes before leaving.
     
 
