@@ -5,7 +5,7 @@
 
 ## Step 2
     Create a new Slack App and give it the following bot scopes:
-    ![Screenshot](BotTokens.png)
+    ![Screenshot](https://github.com/joshuahuerto2/cps847-midtermPractice/blob/master/BotTokens.png)
     Install into workspace after completion
 
 ## Step 3
@@ -58,7 +58,7 @@
 
 ## Step 7
     Enable event subscriptions in Slack app settings, making sure that the URL includes /slack/events:
-    ![Screenshot](EventTokens.png)
+    ![Screenshot](https://github.com/joshuahuerto2/cps847-midtermPractice/blob/master/EventTokens.png)
 
 ## Step 8
     Run the program:
